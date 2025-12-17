@@ -16,34 +16,6 @@
 
 ---
 
-## 目录结构（核心部分）
-
-项目根目录结构大致如下，仅列出与部署和阅读相关的关键内容：
-
-
-.
-├─ 9G7B_MHA/          # 九格模型目录
-├─ baichuan/          # Baichuan2 模型目录
-├─ mistral/           # Mistral 模型目录
-├─ qwen/              # Qwen3 模型目录
-├─ Yi/                # Yi 模型目录
-├─ zephyr/            # Zephyr 模型目录
-├─ dataset/           # 可能使用到的数据集（可选）
-├─ dist/              # 前端 Vue 打包后的静态文件
-├─ instance/          # Flask 实例配置/运行时数据
-├─ migrations/        # 数据库迁移记录（如使用 Flask-Migrate）
-├─ model_manager/     # 模型加载与调度相关代码
-├─ nano/              # 其他模型/实验代码
-├─ app.py             # Flask 后端入口
-├─ 9g.py              # 九格模型相关脚本
-├─ extensions.py      # 扩展与组件初始化（如 Redis、DB 等）
-├─ memory.py          # 会话/记忆管理逻辑
-├─ models.py          # 数据模型或 ORM 定义
-├─ environment.yml    # 本地部署的 Conda 环境说明
-├─ requirements_docker.txt  # Docker 镜像依赖
-├─ Dockerfile
-└─ docker-compose.yml
-````
 
 > 默认仓库已经包含打包好的前端 `dist/`，普通用户不需要自己再执行前端构建。只有在你修改了前端 Vue 代码时，才需要重新 `npm run build` 并覆盖该目录。
 
