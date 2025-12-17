@@ -1,0 +1,8 @@
+name: backend
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - ipykernel
+  - streamlit
+prefix: /data/home/wls_zyf/.conda/envs/backend

@@ -1,0 +1,18 @@
+services:
+  flask-llm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-llm-container
+    network_mode: host
+    volumes:
+      - ./qwen:/app/qwen
+      - ./baichuan:/app/baichuan
+      - ./mistral:/app/mistral
+      - ./zephyr:/app/zephyr
+      - ./Yi:/app/Yi
+      - ./9G7B_MHA:/app/9G7B_MHA
+    restart: unless-stopped
+    environment:
+      - REDIS_HOST=127.0.0.1
+      - REDIS_PORT=6379
