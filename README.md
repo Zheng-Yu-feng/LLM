@@ -1,8 +1,7 @@
-### 启动后端
+### 启动服务
 - cd backend
-- python server.py
+- python app.py
 
-### 启动前端
-- cd frontend
-- npm run dev
-- 初始用户名：admin 密码：123
+### 配置环境
+
+backend/README.MD
